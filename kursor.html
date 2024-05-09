@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurson library</title>
+    <link rel="stylesheet" href="./node_modules/kursor/dist/kursor.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/kursor.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <nav>
+                <h1>LOGO</h1>
+                <div class="sublist">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="banner">
+                <h1>Welcome to <span id="autotyping"></span></h1>
+            </div>
+        </header>
+
+        <!-- Banner sectoin -->
+
+    </section>
+
+    <script src="./node_modules/kursor/dist/kursor.min.js"></script>
+    <script src="./node_modules/autotyping/dist/AutoTyping.min.js"></script>
+    <script>
+        //Cursor animation
+        new kursor(
+            {
+                type: 4,
+                removeDefaultCursor: true,
+                // color: 'rgb(157,211,28)'
+                // el:'.banner'
+            }
+        )
+
+        // Autotyping
+         const myText = new AutoTyping({
+
+            id: 'autotyping', //Your HTML element id without # (string) - required
+
+            typeText: ['My world'], //Your text (array with strings) - required
+
+            textColor:'rgb(1, 3, 20)',
+
+            typeSpeed:(300)
+
+        }).init(); </script>
+</body>
+
+</html>

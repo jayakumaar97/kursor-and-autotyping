@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "autotyping": "^1.2.6",
+    "kursor": "^0.1.6"
+  }
+}

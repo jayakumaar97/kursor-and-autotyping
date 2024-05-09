@@ -1,0 +1,85 @@
+header {
+    height: 100vh;
+}
+
+header nav {
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(1, 3, 20);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav h1 {
+    color: greenyellow;
+    font-size: 24px;
+}
+
+.sublist {
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 70%;
+    border: 2px solid rgba(172, 255, 47, 0.315);
+    width: 70%;
+    transition-duration: 0.7s;
+    list-style-type: none;
+    border-radius: 25px;
+}
+
+nav ul:hover {
+    width: 80%;
+    border: 2px solid rgb(255, 255, 255, 0.315);
+    border-radius: 30px;
+
+    box-shadow: inset 0px 0px 5px greenyellow;
+    /* background-color: rgba(255, 255, 255, 0.200); */
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition-duration: 0.7s;
+}
+
+nav ul li .active {
+    color: greenyellow;
+}
+
+nav ul li a:hover {
+    color: greenyellow;
+}
+
+
+/* Banner section */
+
+.banner {
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    font-size: 80px;
+}
+
+.banner h1 #autotyping {
+    text-shadow: -3px 3px greenyellow;
+    text-transform: uppercase;
+}
